@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دوره جامع ری‌اکت و نکست | فارسی</title>
+<meta name="description" content="دوره آنلاین ری‌اکت، نکست، تایپ‌اسکریپت و فول‌استک برای توسعه‌دهندگان ایرانی. پروژه‌محور و پشتیبانی فارسی.">
+<style>
+:root { --bg:#fff; --fg:#111; --muted:#555; }
+body.dark { --bg:#111; --fg:#eee; --muted:#aaa; }
+body { margin:0; font-family:system-ui,Tahoma,sans-serif; background:var(--bg); color:var(--fg); line-height:1.7; }
+.container { max-width:880px; margin:0 auto; padding:1.5rem; }
+header { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; border-bottom:1px solid #ddd; }
+.dark header { border-color:#333; }
+.logo { font-weight:700; }
+button.theme { background:none; border:1px solid var(--fg); color:var(--fg); padding:.4rem .8rem; cursor:pointer; }
+.hero { text-align:center; padding:4rem 0 2rem; }
+h1 { font-size:clamp(2rem,5vw,3rem); margin:0 0 1rem; }
+.cta { background:var(--fg); color:var(--bg); padding:.9rem 2rem; text-decoration:none; font-weight:600; display:inline-block; }
+section { padding:2.5rem 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; }
+.card { border:1px solid #ddd; padding:1.5rem; }
+.dark .card { border-color:#333; }
+.price { font-size:1.8rem; font-weight:700; }
+form { max-width:420px; margin:0 auto; display:flex; flex-direction:column; gap:1rem; }
+input, select { padding:.8rem; border:1px solid #ccc; background:var(--bg); color:var(--fg); font:inherit; }
+footer { text-align:center; padding:2rem; color:var(--muted); border-top:1px solid #ddd; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">دوره ری‌اکت فول‌استک</div>
+<button class="theme" onclick="document.body.classList.toggle('dark')">تم</button>
+</header>
+<section class="hero">
+<h1>از مبانی تا پروژه واقعی<br>ری‌اکت + نکست + تایپ‌اسکریپت</h1>
+<p>دوره کامل فارسی با پروژه‌های عملی، پشتیبانی مستقیم و تمرکز بر بازار کار ایران.</p>
+<a href="#enroll" class="cta">ثبت‌نام دوره</a>
+</section>
+<section>
+<h2>چه چیز یاد می‌گیرید؟</h2>
+<div class="grid">
+<div class="card"><h3>ری‌اکت ۱۹</h3><p>کامپوننت، هوک، ستیت، روتر و بهینه‌سازی.</p></div>
+<div class="card"><h3>نکست‌جی‌اس</h3><p>روتینگ اپ، SSR، استقرار و اپی روتها.</p></div>
+<div class="card"><h3>تایپ‌اسکریپت</h3><p>تایپ ایمن در پروژه‌های واقعی.</p></div>
+<div class="card"><h3>پروژه نهایی</h3><p>ساخت اپ کامل و استقرار روی ورسل یا گیت‌هاب پیجز.</p></div>
+</div>
+</section>
+<section>
+<h2>قیمت</h2>
+<div class="grid">
+<div class="card" style="text-align:center"><h3>دوره کامل</h3><div class="price">1,890,000 تومان</div><p>دسترسی مادام‌العمر + پروژه‌ها + پشتیبانی</p><a href="#enroll" class="cta">ثبت</a></div>
+</div>
+</section>
+<section id="enroll">
+<h2>ثبت‌نام</h2>
+<form onsubmit="alert('ثبت‌نام شما انجام شد. لینک پرداخت به ایمیل ارسال می‌شود.');return false;">
+<input type="text" placeholder="نام کامل" required>
+<input type="email" placeholder="ایمیل" required>
+<input type="tel" placeholder="موبایل" required>
+<select required><option value="">سطح</option><option>مبتدی</option><option>متوسط</option></select>
+<button class="cta" type="submit">ثبت و پرداخت</button>
+</form>
+</section>
+<footer>دوره ری‌اکت فول‌استک فارسی &copy; 1405 | پشتیبانی: support@example.com</footer>
+</div>
+</body>
+</html>
